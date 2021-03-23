@@ -1,0 +1,53 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./source/index.html",
+    "build": "parcel build ./source/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-plugin-custom-dist-structure": "^1.1.16",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "bootstrap": "4.0",
+    "jquery": "^3.5.1",
+    "jquery-serializejson": "^3.2.1",
+    "jquery-waypoints": "^2.0.5",
+    "parcel-bundler": "^1.12.4",
+    
+    "popper.js": "^1.16.1",
+    "universal-base64": "^2.1.0"
+  },
+  "customDistStructure": {
+    "config": {
+      ".js": "js",
+      ".js.map":"js",
+      "images": [
+        ".jpg",
+        ".png",
+        ".gif"
+      ],
+      "sass":[
+        "css",
+        "css.map",
+        ".scss",
+        ".eot",
+        "svg",
+        "woff2",
+        "ttf",
+        "woff"
+      ],
+      ".fileExtension": "folder/in/dist",
+      "folder/in/dist": [ ".file", ".extensions" ]
+    },
+    "options": {
+      "development": true
+    }
+  }
+}

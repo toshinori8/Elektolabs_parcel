@@ -1,0 +1,65 @@
+.map-responsive{overflow:hidden;padding-bottom:56.25%;position:relative;height:0}.map-responsive iframe{left:0;top:0;height:100%;width:100%;position:absolute}.homeButton{padding:20px;background:rgba(0,0,0,0.4);position:fixed;box-shadow:1px 1px 12px rgba(0,0,0,0.4);z-index:9999999999;right:20px}.homeButton .lnr-chevron-up{font-size:30px;font-weight:600;color:white}.unvisible{color:white !important;font-size:1px !important;opacity:0 !important;width:0px;height:0px;overflow:hidden}.smaller.blue{padding-bottom:10px;padding-top:10px;background-color:rgba(89, 156, 214, 0.600);color:white}.topbanner .container{padding-top:0px;padding-bottom:0px;margin-bottom:0px;margin-top:0px}.topbanner .container .row{z-index:99;position:relative;margin-top:0%}.topbanner{background-image:url(/img/electric-banner.jpg);background-size:cover;background-position:top center;width:100%;max-height:600px}.topbanner .overlay-bg{position:absolute;width:100%;height:100%;background-color:rgba(57, 90, 135, 0.40)}.topreviews{font-size:28px;font-weight:100;color:#6cbb23;text-align:center}.story-content h1{background-color:rgba(110, 185, 41, 0.600);color:white}.telefon{float:right;font-size:30px;background-color:rgba(4, 167, 232, 1.000) !important;padding-left:7px;padding-top:4px;padding-bottom:4px;padding-right:7px}.single-feature .icon{width:100%;padding:4px}.single-feature .icon img{width:100%}.telefon:hover{color:whitesmoke !important}.main-menubar{z-index:1999999999;position:relative;border:0px solid white}.main-menubar a{color:white;background-color:rgba(0,0,0,0.4)}.main-menubar .lnr-cross{color:white !important}.obrazek01{border-radius:12px}.about-area2 .story-content{background-color:rgba(255,255,255,0.8);padding:30px;border-radius:0 0px;padding-top:80px;height:100%;bottom:0px;padding-bottom:40px}.about-area2 .smaller{font-size:18px;font-weight:300;line-height:-12px}.about-area2 .overlay-bg{position:absolute;border:0px solid white;width:100%;height:auto;background-color:rgba(255, 255, 255, 0.60)}.about-area2{background:url('/img/elektryk.jpg') no-repeat center center/cover;color:#fff;background-color:white;padding-bottom:0px}.contact-area{background:url('/img/kontakt.jpg') no-repeat center center/cover;color:#fff}.default-header{position:absolute;top:0px;z-index:999999999}@media (max-width: 386px){.topbanner .telefon{font-size:10px;text-align:center}}@media (max-width: 468px){.topbanner .telefon{font-size:35px;text-align:center}}@media (max-width: 768px){.menu-bar span{font-size:45px}.topbanner .story-content{position:relative;top:-170px;margin-top:0px;margin-bottom:0px}.single-footer-widget .text-uppercase{font-size:20px}}
+#google-reviews{display:flex;flex-wrap:wrap}
+
+#map-plug {display:none;}
+
+.contact-form .alert-msg{   
+  position: absolute;
+  font-size: 24px;
+  color: black !important;
+  background-color: white;
+  border-radius: 12px;
+  padding: 9px;
+  bottom: 50px !important;
+  z-index:1
+}
+
+#google-reviews {
+display:flex;
+flex-wrap:wrap;
+/*display: grid;
+grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));*/
+}
+
+.review-item {
+border:solid 1px rgba(190,190,190,.35);
+margin:0 auto;
+padding:1em;
+flex: 1 1 20%;
+}
+
+@media ( max-width:1200px) {
+  .review-item { flex: 1 1 40%; }
+}
+
+@media ( max-width:450px) {
+  .review-item { flex: 1 1 90%; }
+}
+
+.review-meta, .review-stars {text-align:center; font-size:115%;}
+.review-author { text-transform: capitalize; font-weight:bold; }
+.review-date {opacity:.6; display:block;}
+.review-text {  line-height:1.55; text-align:left; max-width:32em; margin:auto;}
+
+ 
+
+.review-stars ul {
+display: inline-block;
+list-style: none !important;
+margin:0; padding:0;
+}
+
+.review-stars ul li {
+float: left;
+list-style: none !important;
+margin-right: 1px;
+line-height:1;
+}
+
+.review-stars ul li i {
+  color: #E4B248;
+  font-size: 1.4em;
+  font-style:normal;
+}
+.review-stars ul li i.inactive { color: #c6c6c6;}
+.star:after { content: "\2605"; }
